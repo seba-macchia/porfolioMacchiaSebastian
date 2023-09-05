@@ -1,0 +1,21 @@
+.header{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap:wrap;
+  width: 100%;
+  position: absolute;
+  line-height:30px;
+  top: 0;
+  background-color: gray;
+  margin-bottom: 50px;
+}
+h1{
+  text-align: center;
+  font-size: 2rem;
+  color: beige;
+}
+a{
+  text-decoration: none;
+  color: beige;
+}

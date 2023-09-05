@@ -1,0 +1,11 @@
+footer{
+  width: 100%;
+  background-color: gray;
+  height: 50px;
+  & ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+  }
+}

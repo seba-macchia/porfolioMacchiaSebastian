@@ -1,0 +1,178 @@
+@charset "UTF-8";
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#formulario {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  width: 70%;
+  max-width: 400px; /* Limita el ancho máximo del formulario */
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button[type=reset] {
+  background-color: #ccc;
+  margin-left: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.contenedor {
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 1330px;
+  background-color: antiquewhite;
+  padding: 1em;
+}
+.contenedor img {
+  width: 150px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.contenedor p {
+  text-align: start;
+}
+.contenedor p:last-of-type {
+  font-size: 0.9rem;
+  border: 1px solid black;
+  background-color: bisque;
+  text-align: center;
+}
+
+#proyectos {
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+  justify-content: space-between;
+  background-color: antiquewhite;
+}
+#proyectos h3 {
+  font-size: 1rem;
+  color: blue;
+}
+#proyectos img {
+  width: 80%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .contenedor img {
+    width: 250px;
+  }
+  #proyectos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas de tamaño igual */
+    gap: 20px; /* Espacio entre las tarjetas */
+    align-items: center; /* Centrar contenido verticalmente */
+    text-align: center; /* Centrar texto horizontalmente */
+  }
+  #proyectos h2 {
+    width: 100%;
+    grid-column: span 2;
+  }
+  .proyectos-proyecto {
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 15px;
+  }
+  .proyectos-proyecto-descripcion {
+    text-align: center;
+  }
+  .proyectos-proyecto-url {
+    color: blue;
+    background-color: bisque;
+    border: black solid 1px;
+  }
+  .tarjeta {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 8px;
+  }
+}
+.header {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  position: absolute;
+  line-height: 30px;
+  top: 0;
+  background-color: gray;
+  margin-bottom: 50px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: beige;
+}
+
+a {
+  text-decoration: none;
+  color: beige;
+}
+
+nav {
+  width: 90%;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+}
+
+footer {
+  width: 100%;
+  background-color: gray;
+  height: 50px;
+}
+footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+/*# sourceMappingURL=styles.css.map */

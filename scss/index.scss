@@ -1,0 +1,80 @@
+.contenedor{
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 1330px;
+  background-color: antiquewhite;
+  padding: 1em;
+  & img{
+    width: 150px;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+  & p{
+    text-align: start;
+  }
+  p:last-of-type{
+    font-size: .9rem;
+    border: 1px solid black;
+    background-color:bisque;
+    text-align: center;
+  }  
+}
+
+#proyectos{
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+  justify-content: space-between;
+  background-color: antiquewhite;
+  & h3{
+    font-size: 1rem;
+    color: blue;
+  }
+  & img{
+    width: 80%;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+}
+
+// Estilos para la vista de escritorio
+@media screen and (min-width: 768px){
+  .contenedor{
+    & img{
+      width: 250px;
+    }
+  }
+  // Utiliza una cuadrícula (grid) para la sección de proyectos
+  #proyectos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas de tamaño igual */
+    gap: 20px; /* Espacio entre las tarjetas */
+    align-items: center; /* Centrar contenido verticalmente */
+    text-align: center; /* Centrar texto horizontalmente */
+    & h2{
+      width: 100%;
+      grid-column: span 2;
+    }
+  }
+  .proyectos-proyecto{
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 15px;
+    &-descripcion{
+      text-align: center;
+    }
+    &-url{
+      color: blue;
+      background-color: bisque;
+      border: black solid 1px;
+    }
+  }
+  
+    // Opcional: Estilos para las tarjetas en la cuadrícula
+  .tarjeta{
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 8px;
+  }
+}
